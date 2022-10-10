@@ -80,14 +80,14 @@
       "type": "quantitative",
       "axis": {"tickCount": 7},
       "title": "Number of Gold medal",
-      "scale": {"type": "log", "domain": [1, 40]}
+      "scale": {"type": "log", "domain": [1, 10000000]}
     },
     "y": {
       "field": "Silver_Medal",
       "type": "quantitative",
       "title": "Number of Silver medal",
       "axis": {"tickCount": 6},
-      "scale": {"type": "log", "domain": [1, 50]}
+      "scale": {"type": "log", "domain": [1, 1000000]}
     }
   },
   "layer": [
@@ -160,12 +160,12 @@
         "fontSize": 11.5,
         "fontStyle": "italic"
       },
-      "encoding": {
+        "encoding": {
         "text": {"field": "Team/NOC", "type": "nominal"},
         "color": {"value": "black"},
         "opacity": {
           "condition": {
-            "test": "datum['Team/NOC'] == 'United_States_of_America' || datum['Team/NOC'] == 'People's_Republic_of_China' || datum['Team/NOC'] == 'Japan' || datum['Team/NOC'] == 'Great_Britain' || datum['Team/NOC'] == 'ROC' || datum['Team/NOC'] == 'Australia' ||  datum['Team/NOC'] == 'Netherlands'",
+            "test": "datum['Team/NOC']  == 'United States of America' || datum['Team/NOC'] == 'People's Republic of China' || datum['Team/NOC'] == 'Japan' || datum['Team/NOC'] == 'Great Britain' || datum['Team/NOC'] == 'ROC' || datum['Team/NOC'] == 'Australia' ||  datum['Team/NOC'] == 'Netherlands'",
             "value": 1
           },
           "value": 0
