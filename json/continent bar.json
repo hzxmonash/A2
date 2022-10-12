@@ -1,0 +1,33 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data": {
+    "values": [
+      {"category": "Asia", "group": "Gold Medal", "value": 108},
+      {"category": "Asia", "group": "Silver Medal", "value": 99},
+      {"category": "Asia", "group": "Bronze Medal", "value": 101},
+      {"category": "Africa", "group": "Gold Medal", "value": 11},
+      {"category": "Africa", "group": "Silver Medal", "value": 12},
+      {"category": "Africa", "group": "Bronze Medal", "value": 15},
+      {"category": "Europe", "group": "Gold Medal", "value": 125},
+      {"category": "Europe", "group": "Silver Medal", "value": 145},
+      {"category": "Europe", "group": "Bronze Medal", "value": 185},
+      {"category": "North America", "group": "Gold Medal", "value": 61},
+      {"category": "North America", "group": "Silver Medal", "value": 54},
+      {"category": "North America", "group": "Bronze Medal", "value": 60},
+      {"category": "South America", "group": "Gold Medal", "value": 10},
+      {"category": "South America", "group": "Silver Medal", "value": 15},
+      {"category": "South America", "group": "Bronze Medal", "value": 11},
+      {"category": "Oceania", "group": "Gold Medal", "value": 25},
+      {"category": "Oceania", "group": "Silver Medal", "value": 13},
+      {"category": "Oceania", "group": "Bronze Medal", "value": 30}
+    ]
+  },
+  "mark": "bar",
+  "encoding": {
+    "x": {"field": "category"},
+    "y": {"field": "value", "type": "quantitative"},
+    "xOffset": {"field": "group"},
+    "color": {"field": "group"}
+  },
+  "config": {}
+}
