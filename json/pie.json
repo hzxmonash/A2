@@ -1,23 +1,17 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "description": "A simple pie chart with embedded data.",
+  "description": "A simple donut chart with embedded data.",
   "data": {
     "values": [
-      {"category": "Gold Medal", "value": 340, "angle": 110},
-      {"category": "Silver Medal", "value": 338, "angle": 100},
-      {"category": "Bronze Medal", "value": 402, "angle": 150}
+      {"category": "Gold Medal", "value": 340},
+      {"category": "Silver Medal", "value": 338},
+      {"category": "Bronze Medal", "value": 402}
     ]
   },
+  "mark": {"type": "arc", "innerRadius": 50},
   "encoding": {
     "theta": {"field": "value", "type": "quantitative"},
+    "text": {"field": "value", "type": "quantitative"},
     "color": {"field": "category", "type": "nominal"}
-  },
-  "layer": [
-    {"mark": {"type": "arc", "outerRadius": 80}},
-    {
-      "mark": {"type": "text", "radius": 90},
-      "encoding": {"text": {"field": "value", "type": "nominal"}}
-    }
-  ],
-  "config": {}
+  }
 }
