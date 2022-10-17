@@ -9,11 +9,11 @@ p {
 }
 
 #idselect {
-    color: green;
+    color: rgb(249, 221, 6);
 }
 
 .class-select {
-    color: blue;
+    color: rgb(12, 125, 247);
 }
 
 
@@ -31,12 +31,12 @@ p {
 /* Background in HTML */
 
 .bg-h1 {
-    background-color: #2D4B65;
+    background-color: #b531f7;
     color: white;
 }
 
 .bg-para {
-    background-color: #B0C6CF;
+    background-color: #8538f0;
 }
 
 
